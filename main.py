@@ -39,7 +39,7 @@ def main(model_image, user_image, schp_model_path):
     
     user_image, user_segment, translated_lip = translate_face(model_segment, user_segment, model_image, user_image, lip_loc)
    
-    sem_res = apply_seamless_cloning(model_image, user_image, user_segment)
+    # sem_res = apply_seamless_cloning(model_image, user_image, user_segment)
     
     inpaint_image, mask = apply_inpainting(model_image, translated_lip)
 
